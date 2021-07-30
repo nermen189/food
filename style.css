@@ -1,0 +1,1125 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+/* the before-container styles */
+.before-container{
+    width:100%;
+    background-color: transparent;
+    height:120px;
+    margin:0;
+    padding: 0;
+}
+.before-container i {
+    margin-left: 5%;
+    margin-top:30px;
+    color:white;
+}
+.before-container h3 {
+    color:white;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    margin-top:-50px;
+    margin-left: 7%;
+    letter-spacing: 1.5px;
+}
+.before-container .search{
+    width:20%;
+    height:30px;
+    border-radius: 20px;
+    border:2px solid white;
+    margin-left: 70%;
+    margin-top: -95px;
+    padding: 2px;
+    position: relative;
+}
+.before-container .search input{
+    border:none;
+    font-size: 20px;
+    color:white;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-top: 1px;
+    outline: none;
+}
+.before-container .search i {
+    color:white;
+    position: absolute;
+    top:-25px;
+    left:80%;
+}
+/*end .before-container */
+
+/* the container styles */
+.container{
+    position: relative;
+}
+
+.container i {
+    margin-left: 5%;
+    margin-top:30px;
+    color:gold;
+}
+.container h3 {
+    color:white;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    margin-top:-50px;
+    margin-left: 7%;
+    letter-spacing: 1.5px;
+}
+.container .list li a {
+    text-decoration: none;
+    color:#ccc;
+    transition: all 0.5s;
+}
+.container .list{
+    list-style: none;
+    position: absolute;
+    top:50px;
+    left:50%;
+}
+.container .list li {
+    float:left;
+    margin-left: 25px;
+}
+.container .list li a:hover{
+    color:gold;
+}
+.container .font-icons{
+    position: absolute;
+    top:40px;
+    left:88%;
+}
+.container .font-icons i{
+    color:#ccc;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.container .font-icons i:first-child{
+    transform: rotateY(180deg);
+}
+.container .font-icons i:hover{
+    color:gold;
+}
+.container .dropdown-list{
+    background-color: gold;
+    min-width: 150px;
+    min-height: 100px;
+    display: none;
+}
+.container .dropdown-list ul {
+    list-style: none;
+}
+.container .dropdown-list ul li {
+    padding:10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.container .dropdown-list ul li a {
+    text-decoration: none;
+    color:black;
+    transition:  all 1s;
+    font-weight: bold;
+}
+.container .dropdown-list ul li a:hover{
+    padding-left: 50px;
+}
+
+/* the main image styles */
+
+.container img {
+    position: absolute;
+    top:180px;
+    left:65%;
+}
+.container .second-image{
+    margin-left: 3%;
+}
+.container >h2 {
+    color:white;
+    position: absolute;
+    top:10%;
+    left:15%;
+    text-decoration: underline solid gold;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+.container .button{
+    max-width:70%;
+    min-height:19px;
+    border-radius: 20px;
+    border:2px solid white;
+    padding: 10px;
+    position: relative;
+    background-color: transparent;
+    color:whitesmoke;
+    top:300px;
+    left:59px;
+}
+.container .button button{
+    width:30%;
+    height:40px;
+    background-color: gold;
+    font-weight: bold;
+    color:black;
+    font-size: 20px;
+    position: absolute;
+    right:0px;
+    top:0px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border:none;
+}
+.container .button button:hover{
+    background-color: violet;
+}
+/*end the first part*/
+
+/*start the second part*/
+.dishes{
+    width:100%;
+    background-color: white;
+    min-height:650px;
+    position: relative;
+    top:480px;
+}
+.dishes> h2 {
+    color:black;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid violet;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    width:300px;
+    position: absolute;
+    left:38%;
+}
+.dishes .btns{
+    position: absolute;
+    top:150px;
+    left:30%;
+}
+.dishes button{
+    background-color: transparent;
+    min-width: 100px;
+    color:#ccc;
+    padding:10px;
+    margin-left: 100px;
+    border:none;
+    cursor: pointer;
+}
+.design0 .dishes .btns button:first-child{
+    color:black;
+    text-decoration: underline solid violet;
+    font-weight: bold;
+}
+.design1 .dishes .btns button:last-child{
+    color:black;
+    text-decoration: underline solid violet;
+    font-weight: bold;
+}
+ .dishes .do,.dishes .do2{
+     width:80%;
+     margin-left: 10%;
+     min-height: 350px;
+     background-color:transparent;
+     position: relative;
+     top:240px;
+     display:grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 30px 30px;
+}
+ .dishes .do div,.dishes .do2 div{
+    background-color: black;
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    max-height: 350px;
+    overflow: visible;
+    transition: all 1s;
+    cursor: pointer;
+}
+.dishes .do  div img , .dishes .do2 div img{
+   top:20px;
+   left:2%;
+   width:97%;
+}
+.dishes .do  div:nth-child(2) img{
+    left:0%;
+}
+.dishes .do  div:last-child img{
+    top:30px;
+}
+.dishes .do div h2,.dishes .do2 div h2 {
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    color:black;
+    font-weight: bold;
+    padding:0;
+    margin:0;
+    opacity: 0.5;
+    height:35px;
+    letter-spacing: 1.2;
+    font-size: 25px;
+    font-family: 'DM Sans', sans-serif;
+}
+.dishes .do div p,.dishes .do2 div p {
+    margin:0;
+    background-color: green;
+    min-width:60px;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top:0;
+    right:0;
+}
+/* the design0*/
+.design0 .dishes .do div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 0px;
+    overflow: hidden;
+}
+.design0 .dishes .do2 div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 350px;
+    overflow: visible;
+    top:-340px;
+}
+
+/*the design1*/
+.design1 .dishes .do div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 350px;
+    overflow: visible;
+}
+.design1 .dishes .do2 div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 0px;
+    overflow: hidden;
+    top:240px;
+}
+/* the end of our dishes*/
+
+.container .services{
+    background-color: rgb(43, 41, 41);
+    width:100%;
+    min-height:600px;
+    position: relative;
+    top:482px;
+}
+.services h2{
+    color:white;
+    text-decoration: underline solid gold;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+}
+.services .category{
+    width:20%;
+    position: absolute;
+    top:100px;
+    left:80%;
+    border-left: 1px solid white;
+    height:470px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5,calc(90% / 5));
+    align-content: space-between;
+}
+.category div{
+    margin-left: 2%;
+    position: relative;
+}
+.category div img{
+   border-radius: 50%;
+   border:none;
+   width:20%;
+   height:60%;/*(60% from the div height)*/
+   position: absolute;
+   top:20px;
+   left:2%;
+}
+.category div p {
+    color:white;
+    font-weight: bold;
+    position: absolute;
+    top:15px;
+    left:28%;
+    font-size: 24px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+}
+.category div p:hover{
+    text-decoration: underline solid gold;
+}
+.services .content-dishes{
+    width:75%;
+    margin-left: 2.5%;
+    background-color: transparent;
+    margin-top:60px;
+    height:470px;
+}
+.services .content-dishes .fish,.services .content-dishes .grill,.services .content-dishes .fried,.services .content-dishes .salad,.services .content-dishes .dessert{
+    width:100%;
+    height:470px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px 10px;
+}
+.services .content-dishes .fish div,.services .content-dishes .grill div,.services .content-dishes .fried div,.services .content-dishes .salad div,.services .content-dishes .dessert div {
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.services .content-dishes .fish div img,.services .content-dishes .grill div img,.services .content-dishes .fried div img,.services .content-dishes .salad div img ,.services .content-dishes .dessert div img{
+  width:100%;
+  height:80%;
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+.services .content-dishes .fish div h3,.services .content-dishes .grill div h3,.services .content-dishes .fried div h3,.services .content-dishes .salad div h3,.services .content-dishes .dessert div h3  {
+    background-color: white;
+    opacity: 0.5;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    position: absolute;
+    width:100%;
+    bottom: 0%;
+    padding:0;
+    margin:0;
+}
+/*end the styles of our services*/
+
+/*start order styles */
+
+.order{
+    width:100%;
+    background-color: white;
+    min-height:600px;
+    position: relative;
+    top:480px;
+}
+ .container .order img {
+    position: absolute;
+    left:47%;
+    top:25px;
+    width:60%;
+}
+.container .order h2 {
+    position: absolute;
+    top:100px;
+    left:10%;
+    color:red;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+.container .order p{
+    font-size: 18px;
+    left:10%;
+    position: absolute;
+    top:250px;
+    font-family:cursive;
+}
+.container .order button{
+    width:150px;
+    background-color: red;
+    color:white;
+    text-align: center;
+    position: absolute;
+    top:400px;
+    left:20%;
+    border:none;
+    height:50px;
+    cursor: pointer;
+}
+.container .order button:hover{
+    background-color: gold;
+    color:black;
+}
+.container .order i {
+    position: absolute;
+    top:20px;
+    left:85%;
+}
+/*the end of the delivery part */
+
+/*the deal of the week  styles */
+
+.container .deal{
+    width:100%;
+    min-height: 400px;
+    background-color: rgb(43, 41, 41);
+    position: relative;
+    top:450px;
+}
+ .container .deal img {
+    width:18%;
+    position: absolute;
+    top:120px;
+    left:18%;
+    height:49%;
+    border-radius: 50%;
+}
+.container .deal h3 {
+    position: absolute;
+    top:120px;
+    left:40%;
+    color:red;
+}
+.container .deal p {
+    color:white;
+    font-family: cursive;
+    position: absolute;
+    top:200px;
+    left:40%;
+}
+.container .deal div {
+    width:5%;
+    position: absolute;
+    top:280px;
+    height:16%;
+    border-radius: 50%;
+}
+.container .deal div:first-of-type{
+    left:50%;
+    background-color: gold;
+}
+.container .deal div:nth-of-type(2){
+    left:60%;
+    background-color: red;
+}
+.container .deal div:last-child{
+    left:40%;
+    background-color: green;
+}
+
+/*the end of the deal */
+
+/* the about part */
+
+.container .about{
+    width:100%;
+    background-color: white;
+    height:250px;
+    position: relative;
+    top:450px;
+}
+.container .about .content{
+     width:95%;
+     position: absolute;
+     top:0%;
+     margin-left: 2.5%;
+     background-color: transparent;
+     height:95%;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+}
+.container .about div {
+    background-color: transparent;
+    margin-right: 2%;
+    margin-top: 20px;
+    color:black;
+    font-family: cursive;
+    cursor: pointer;
+}
+.container .about p {
+    font-family: cursive;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+/*add media */
+
+/* large screens */
+
+@media (min-width:1200px) {
+    body{
+        background-color:violet;
+   }
+   .container{
+       width:85%;
+       min-height:calc(200vh - 100px);
+       background-color: rgb(43, 41, 41);
+       margin-left: 7.5%;
+   }
+   .container .font-icons i:last-child{
+       display: none;
+   }   
+   .container .font-icons i:nth-child(3){
+       display: none;
+   }
+   .container img {
+       left:62%;
+   }
+   .container .second-image{
+    display: none;
+   }
+   .container .button {
+       max-width: 40%;
+       top:400px;
+       left:180px;
+   }
+}
+
+/*medium screens */
+
+@media (min-width:992px) and (max-width:1199px) {
+    
+    body{
+        background-color:violet;
+   }
+   .container{
+       width:85%;
+       min-height:calc(200vh - 100px);
+       background-color: rgb(43, 41, 41);
+       margin-left: 7.5%;
+   }   
+   .container ul{
+       left:40%;
+   }
+   .container .font-icons i:last-child{
+    display: none;
+   }
+   .container .font-icons i:nth-child(3){
+    display: none;
+}   
+.container img {
+    left:52%;
+}
+.container .second-image{
+    display: none;
+}
+.container h2 {
+    font-size: 40px;
+    margin-left: -5%;
+}
+.container .button {
+    max-width: 30%;
+    top:400px;
+    left:140px;
+}
+.dishes .btns{
+    left:23%;
+}
+.dishes .do div h2 , .dishes .do2 div h2 {
+    font-size: 20px;
+}
+.design0 .dishes .do div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 0px;
+    overflow: hidden;
+}
+.design0 .dishes .do2 div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 280px;
+    overflow: visible;
+    top:-340px;
+}
+.category div p{
+    font-size: 20px;
+}
+/*design1*/
+.design1 .dishes .do div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 280px;
+    overflow: visible;
+}
+.design1 .dishes .do2 div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 0px;
+    overflow: hidden;
+    top:240px;
+}
+
+}
+
+/* small screens */
+ @media (min-width:766px) and (max-width:991px) {
+     
+    body{
+        background-color:rgb(43, 41, 41);
+   }
+   .container{
+       width:100%;
+       min-height:calc(200vh - 100px);
+       background-color: rgb(43, 41, 41);
+       margin:0;
+   }   
+   .container .list{
+      left:40%;
+   }
+   .before-container{
+    display: none;
+   }
+   .container .font-icons{
+       left:85%;
+   }
+   .container .font-icons i:last-child{
+    display: none;
+   }
+.container .first-img{
+    display: none;
+}
+.container .second-image{
+    left:47%;
+}
+.container h2{
+    font-size: 40px;
+    margin-left: -10%;
+}
+.container .button {
+    max-width: 40%;
+    top:350px;
+    left:30px;
+}
+.dishes h2{
+    left:40%;
+}
+.dishes .btns{
+    top:130px;
+    left:16%;
+}
+.dishes .do div h2,.dishes .do2 div h2{
+    font-size: 20px;
+    left:0%;
+}
+.design0 .dishes .do div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 0px;
+    overflow: hidden;
+}
+.design0 .dishes .do2 div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 230px;
+    overflow: visible;
+    top:-340px;
+}
+/*design1*/
+.design1 .dishes .do div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 230px;
+    overflow: visible;
+}
+.design1 .dishes .do2 div{
+    background-color: black;
+    padding:0;
+    text-align: center;
+    position: relative;
+    max-height: 0px;
+    overflow: hidden;
+    top:240px;
+}
+.category div p{
+    font-size: 20px;
+}
+.container .order h2 {
+    left:15%;
+}
+.container .order p {
+    left:5%;
+}
+.container .order i{
+    left:82%;
+} 
+}
+
+/*very small screens */
+
+@media (max-width:765px) {
+     
+        body{
+            background-color:rgb(43, 41, 41);
+       }
+       .container{
+           width:100%;
+           min-height:calc(200vh - 100px);
+           background-color: rgb(43, 41, 41);
+           margin:0;
+       } 
+       .container .list {
+           display: none;
+       }  
+       .before-container{
+        display: none;
+       }
+       .container i{
+          margin-left: 35%;
+          margin-top: 50px;
+       }
+       .container h3 {
+        font-size: 60px;
+        font-family: 'Lobster', cursive;
+        margin-top: -63px;
+        margin-left: 43%;
+       }
+       .container .font-icons{
+           position: absolute;
+           top:0px;
+           left:94%;
+           background-color: gold;
+       }
+       .container .font-icons i{
+           color:white;
+           margin-top:15px;
+           padding-bottom:10px;
+           
+        }
+        .container .font-icons i:hover{
+            color:violet;
+        }
+        .container .first-img{
+            display: none;
+        }
+        .container .second-image{
+         display: none;
+        }
+        .container> h2 {
+            margin-left: -10%;
+            font-size: 45px;
+            margin-top: -100px;
+        }
+        .dishes h2 {
+            left:15%;
+            font-size: 30px;
+        }
+        .dishes .btns{
+            left:8%;
+            top:120px;
+        }
+        .category div p{
+            font-size: 15px;
+        }
+        .services .content-dishes .fish,.services .content-dishes .fried,.services .content-dishes .dessert,.services .content-dishes .salad,.services .content-dishes .grill{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .services .content-dishes .fish div h3,.services .content-dishes .fried div h3 ,.services .content-dishes .dessert div h3 ,.services .content-dishes .salad div h3 ,.services .content-dishes .grill div h3{
+            font-size: 15px;
+    }
+    .container .order h2 {
+        left: 6%;
+        font-size: 40px;
+    }
+    .container .order p {
+        left: 2%;
+        font-size: 18px;
+    }
+    .container .order i{
+        left: 45%;
+    }
+   .container .order img {
+    left: 49%;
+    top: 86px;
+   }
+   .container .deal h3 {
+    top: 177px;
+    left: 12%;
+    font-size: 35px;
+   }
+}
+
+    @media (max-width:400px) {
+        
+        .dishes .do, .dishes .do2 {
+            grid-template-columns: 100%;
+            justify-content: space-between;
+        }
+        .dishes .do div , .dishes .do2 div {
+            margin-bottom: 20px;
+        }
+        .dishes .do div img , .dishes .do2 div img {
+            width:10%;
+        }
+        .dishes .do div h2,.dishes .do2 div h2{
+            font-size: 15px;
+            left:0%;
+            
+        }
+        .design0 .dishes .do div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            max-height: 0px;
+            overflow: hidden;
+        }
+        .design0 .dishes .do2 div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            min-height: 200px;
+            overflow: visible;
+            top:-340px;
+        }
+        /*design1*/
+        .design1 .dishes .do div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            min-height: 200px;
+            overflow: visible;
+            margin-left: 10%;
+        }
+        .design1 .dishes .do2 div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            max-height: 0px;
+            overflow: hidden;
+            top:240px;
+        }
+        .dishes .do  div img , .dishes .do2 div img{
+            top: 10px;
+            width: 85%;
+            left: 9%;
+        }
+    }
+
+
+
+    /*some sepical media */
+
+    @media (min-width:617px) and (max-width:762px) {
+        
+        .container h3 {
+            font-size: 60px;
+            font-family: 'Lobster', cursive;
+            margin-top: -63px;
+            margin-left: 41%;
+           }
+           .container h2 {
+               margin-left: -1%;
+           }
+       
+    }
+
+    @media (max-width:541px) {
+        .container .font-icons {
+            left:90%;
+        }
+        .services .content-dishes .fish,.services .content-dishes .fried,.services .content-dishes .dessert,.services .content-dishes .salad,.services .content-dishes .grill{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .services .content-dishes .fish div h3,.services .content-dishes .fried div h3 ,.services .content-dishes .dessert div h3 ,.services .content-dishes .salad div h3 ,.services .content-dishes .grill div h3{
+            font-size: 10px;
+    }   
+    .services .category div p {
+         font-size: 10px;
+         top:20px;
+         left:46%;
+    } 
+    .category div img {
+        width:40%;
+    }
+    .container .order h2 {
+        left: 33%;
+        font-size: 27px;
+        top: 12px;
+    }
+    .container .order img{
+        left: 5%;
+        top: 86px;
+        width: 100%;
+    }
+    .container .order p {
+        left: 4%;
+        font-size: 16px;
+        top: 338px;
+    }
+    .container .order button {
+        top: 474px;
+        left: 27%;
+    }
+    .container .order i {
+        top:101px;
+        font-size: 20px;
+    }
+    .container .deal h3 {
+        top: 104px;
+        left: -26%;
+        font-size: 28px;
+    }
+    .container .deal img {
+        width: 26%;
+        position: absolute;
+        top: 141px;
+        left: 6%;
+        height: 32%;
+        border-radius: 50%;
+    }
+    .container .deal p {
+        top: 154px;
+        left: 37%;
+    }
+    .container .deal div {
+        width: 7%;
+        position: absolute;
+        top: 280px;
+        height: 10%;
+        border-radius: 50%;
+    }
+    .container .about div {
+        font-size: 12px;
+    }
+    }
+
+
+
+
+
+    @media (min-width:468px) and (max-width:762px) {
+        
+        .dishes h2{
+            left:30%
+        }
+        .dishes .btns{
+            left:15%;
+        }
+        .design0 .dishes .do div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            max-height: 0px;
+            overflow: hidden;
+        }
+        .design0 .dishes .do2 div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            max-height: 120px;
+            overflow: visible;
+            top:-340px;
+        }
+        /*design1*/
+        .design1 .dishes .do div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            max-height: 120px;
+            overflow: visible;
+        }
+        .design1 .dishes .do2 div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            max-height: 0px;
+            overflow: hidden;
+            top:240px;
+        }
+    }
+    @media (min-width:500px) and (max-width:628px) {
+        .dishes .btns{
+            left:5%;
+        }
+    }
+
+    @media (min-width:410px) and (max-width:764px) {
+        .dishes .do, .dishes .do2 {
+            grid-template-columns: repeat(2 , auto);
+        }
+        .dishes .do div , .dishes .do2 div {
+            margin-bottom: 20px;
+        }
+        .dishes .do div img , .dishes .do2 div img {
+            width:90%;
+        }
+        .dishes .do div h2 , .dishes .do2 div h2 {
+            left:0%;
+            font-size: 18px;
+        }
+
+        .design0 .dishes .do div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            max-height: 0px;
+            overflow: hidden;
+        }
+        .design0 .dishes .do2 div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            min-height: 200px;
+            overflow: visible;
+            top:-340px;
+        }
+        /*design1*/
+        .design1 .dishes .do div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            min-height: 200px;
+            overflow: visible;
+        }
+        .design1 .dishes .do2 div{
+            background-color: black;
+            padding:0;
+            text-align: center;
+            position: relative;
+            max-height: 0px;
+            overflow: hidden;
+            top:240px;
+        }
+
+    }
